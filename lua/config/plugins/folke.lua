@@ -1,5 +1,4 @@
-return
-  {
+local M = {
 
     {
     "folke/tokyonight.nvim",
@@ -7,10 +6,13 @@ return
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       -- load the colorscheme here
-      vim.cmd([[colorscheme tokyonight]])
+	vim.cmd([[colorscheme tokyonight-night]])
     end,
-  },
-    
-  { "folke/which-key.nvim", lazy = true }
+    },
+
+   { "folke/which-key.nvim", lazy = true }
 
   }
+
+
+return { M } 
