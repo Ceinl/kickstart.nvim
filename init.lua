@@ -1,9 +1,10 @@
 -- Init.lua
-
+-- NOTE: Here i just connect all my files
 -- require block
-require 'config.keymaps'
-require 'config.options'
 
-require("config.lazy")
+require 'config.options'
+require 'config.keymaps'
+
+require("config.lazy") -- Always load after options
 
 require 'config.appearance'
