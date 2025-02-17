@@ -5,6 +5,6 @@
 require 'config.options'
 require 'config.keymaps'
 
-require("config.lazy") -- Always load after options
+require("config.Lazy") -- Always load after options
 
 require 'config.appearance'

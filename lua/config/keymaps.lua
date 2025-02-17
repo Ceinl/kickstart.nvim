@@ -1,5 +1,5 @@
 -- Keybinds --
-
+vim.api.nvim_set_keymap('n', '<Esc><Esc>', ':Dashboard<CR>', { noremap = true, silent = true })
 -- Basic --
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('i', 'jj', '<Esc>')
@@ -19,6 +19,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+vim.keymap.set("v","J",":m '>+1<CR>gv=gv'")
+vim.keymap.set("v","K",":m '>-2<CR>gv=gv'")
 
 -- TIP: Disable arrow keys in normal mode
 -- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
