@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
+vim.opt.fileformats = { "unix", "mac", "dos" }
 vim.cmd("autocmd BufReadPost * setlocal fileformat=unix")
 
 -- Cursor navigation --
@@ -40,4 +41,6 @@ vim.opt.timeoutlen = 300
 -- List chars --
 vim.opt.list = true
 vim.opt.listchars = { tab = '| ', trail = '·', nbsp = '␣' }
+vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
