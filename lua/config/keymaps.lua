@@ -7,6 +7,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 vim.keymap.set('n','<leader>e',":e .<CR>")
 
+vim.keymap.set("n", "<Tab><Tab>", "I<Tab><Esc>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', { noremap = true, silent = true })
 
 -- Keybinds to make split navigation easier.
